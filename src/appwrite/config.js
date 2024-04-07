@@ -1,5 +1,5 @@
 import { Client, Databases } from 'appwrite'
-import conf from '../conf'
+import conf from '../conf/conf'
 
 
 class Service{
