@@ -6,7 +6,7 @@ import Login from './Login'
 import Post from './Post'
 import Signup from './Signup'
 
-export default {
+export {
     AddPost,
     AllPosts,
     EditPost,
