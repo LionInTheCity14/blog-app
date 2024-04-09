@@ -6,14 +6,10 @@ import {login, logout} from "./store/authSlice"
 import { Footer, Header } from './components'
 import { Outlet } from 'react-router-dom'
 
-import conf from './conf/conf'
-
 function App() {
   const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
 
-  // console.log(conf, conf.appwriteBucketId, conf.editorApi)
-  
   useEffect(() => {
     authService.getCurrentUser()
     .then((userData) => {
